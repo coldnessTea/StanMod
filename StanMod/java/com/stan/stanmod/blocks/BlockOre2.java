@@ -18,6 +18,7 @@ public class BlockOre2 extends Block
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(CreativeTabs.tabBlock);
 		setStepSound(soundTypeGrass);
+		// Breakable hard
 		setHardness(2.5F);
 		setLightLevel(1.0F);
 
