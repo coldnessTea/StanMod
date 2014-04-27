@@ -14,16 +14,18 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, version = Reference.VERSION)
 public class StanMod 
 {
-	public static Block ore1,ore2;
+	public static Block ore1,ore2,ore3;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		ore1 = new BlockOre1();
 		ore2 = new BlockOre2();
+		ore3 = new BlockOre3();
 		
 		RegisterHelper.registerBlock(ore1);
 		RegisterHelper.registerBlock(ore2);
+		RegisterHelper.registerBlock(ore3);
 	}
 	
 	
